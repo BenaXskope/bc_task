@@ -9,7 +9,7 @@
       <h2 class="text-center font-bold text-xl text-yellow-500">
         Состав портфеля
       </h2>
-      <dl class="mt-5 grid grid-cols-1 gap-5">
+      <dl class="mt-5 grid grid-cols-1 gap-5 mb-4">
         <PriceCard
           v-for="cur of currencies"
           :key="cur"
@@ -95,6 +95,7 @@
         </PriceCard>
       </dl>
       <PieChart
+        v-if="overallCost > 0"
         :key="updateChartFlag"
         :datasets="currenciesCost"
         :labels="currenciesNames"
