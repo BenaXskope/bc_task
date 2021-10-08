@@ -1,5 +1,11 @@
 # cryptonomicon
 
+Technology stack:
+- Vue3 (Options API) + Vue-router
+- Tailwind
+- Vue-chartjs
+- Websockets
+
 ## Project setup
 ```
 npm install
